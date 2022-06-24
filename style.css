@@ -45,24 +45,24 @@
     gap: 10px;
 }
 
-.navBar {
-    min-height: 50px;
+.navbarContainer {
     background-color: black;
+}
+
+.navbarContent {
+    min-height: 50px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #navOptions {
     list-style-type: none;
-    margin-left: 10%;
     color: white;
     gap: 20px;
 }
 
 li:first-child {
     font-size: x-large;
-}
-
-#signOut {
-    margin-right: 10%;
 }
 
 button{
@@ -72,7 +72,7 @@ button{
     padding: 5px 10px;
 }
 
-.container {
+.boxesContainer {
     min-height: 500px;
     width: 80%;
     margin: 0 auto;
@@ -90,14 +90,9 @@ button{
     flex: 1;
 }
 
-.leftColumn, .rightColumn {
-    flex-wrap: wrap;
-}
-
 .userCard {
     min-height: 250px;
     min-width: 100%;
-    overflow: hidden;
 }
 
 .topbarBlue {
@@ -120,8 +115,13 @@ button{
 }
 
 .userContent {
+    padding-top: 50px;
     margin: 0 30px;
     flex-direction: column;
+}
+
+.userContent > *{
+    margin-bottom: 1rem;
 }
 
 .blackBox {
@@ -130,6 +130,9 @@ button{
 
 #profilePic {
     width: 100px;
+    position: relative;
+    left: 20px;
+    top: 50px;
 }
 
 .smallerPic {

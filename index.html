@@ -8,26 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+    <!-- CONTAINER TO CREATE BLACK BACKGROUND FOR NAVBAR-->
+    <div class="navbarContainer">
 
-    <header class="navBar flex2">
-        <ul id="navOptions" class="flex4">
-            <li>Profile</li>
-            <li>Home</li>
-            <li>My Profile</li>
-            <li>Find Connections</li>
-        </ul>
-        <button id="signOut">Sign Out</button>
-    </header>
+        <!-- NAVBAR CONTENT -->
+        <header class="navbarContent flex2">
+            <ul id="navOptions" class="flex4">
+                <li>Profile</li>
+                <li>Home</li>
+                <li>My Profile</li>
+                <li>Find Connections</li>
+            </ul>
+            <button id="signOut">Sign Out</button>
+        </header>
+    </div>
 
-    <div class="container flex1">
-        <div class="leftColumn flex1">
+    <!-- END OF NAVBAR -->
 
-            <div class="userCard relative">
-                <div class="topbarBlue"></div>
+    <!-- CONTAINER FOR THE 4 BOXES -->
+    <div class="boxesContainer flex1">
+
+        <!-- LEFT COLUMN OF BOXES -->
+        <div class="leftColumn">
+
+            <!-- USERCARD BOX -->
+            <div class="userCard">
+
+                <!-- BLUE BAR AND PICTURE -->
+                <div class="topbarBlue">
+                    <img src="./icons/user-circle.png" alt="user-circle" id="profilePic">
+                </div>
+
+                <!-- WHITE SECTION OF BOX -->
                 <div class="usercardWhitespace">
-                    <div class="userContent absolute flex3">
-                        <img src="./icons/user-circle.png" alt="user-circle" id="profilePic">
-                        <span>Brandon Taylor</span>
+                    <div class="userContent">
+                        <h2>Brandon Taylor</h2>
                         <div class="location flex3">
                             <img src="./icons/map-marker.png" alt="map-marker" id="iconMap">
                             <p>Palmdale, CA</p>
@@ -44,7 +60,7 @@
                 </div>
             </div>
 
-
+            <!-- EDUCATION BOX -->
             <div class="education">
                 <div class="topbarBlack flex2">
                     <h3>Education</h3>
@@ -59,11 +75,14 @@
 
             </div>
 
-
         </div>
 
-        <div class="rightColumn flex1">
+        <!-- END OF LEFT COLUMN -->
 
+        <!-- RIGHT COLUMN -->
+        <div class="rightColumn">
+
+            <!-- CONNECTION REQUESTS BOX -->
             <div class="connectionRequests">
                 <div class="topbarBlack flex2">
                     <h3><span class="circledNumber">2</span>  Connection Requests</h3>
@@ -84,6 +103,7 @@
                 </div>
             </div>
 
+            <!-- YOUR CONNECTIONS BOX -->
             <div class="yourConnections">
                 <div class="topbarBlack flex2">
                     <h3><span class='circledNumber'>500+</span>  Your Connections</h3>
@@ -112,6 +132,8 @@
                 </div>
             </div>
         </div>
+        
+
     </div>
 </body>
 </html>
