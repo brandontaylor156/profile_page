@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto_regular;
+}
+
+@font-face {
+    font-family: roboto_regular;
+    src: url(./roboto/Roboto-Regular.ttf);
+}
+
+.flex1, .flex2, .flex3, .flex4, .flex5, .flex6 {
+    display: flex;
+}
+
+.flex1 {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex2 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex3 {
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.flex4 {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex5 {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex6 {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.navBar {
+    min-height: 50px;
+    background-color: black;
+}
+
+#navOptions {
+    list-style-type: none;
+    margin-left: 10%;
+    color: white;
+    gap: 20px;
+}
+
+li:first-child {
+    font-size: x-large;
+}
+
+#signOut {
+    margin-right: 10%;
+}
+
+button{
+    background-color: #16a2b8;
+    font-family: roboto_regular;
+    color: white;
+    padding: 5px 10px;
+}
+
+.container {
+    min-height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    gap: 5%;
+}
+
+.leftColumn {
+    min-height: 500px;
+    flex: 2;
+}
+
+.rightColumn {
+    min-height: 500px;
+    flex: 1;
+}
+
+.leftColumn, .rightColumn {
+    flex-wrap: wrap;
+}
+
+.userCard {
+    min-height: 250px;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.topbarBlue {
+    min-height: 80px;
+    background-color: #16a2b8;
+    border: 3px solid #16a2b8;
+}
+
+.topbarBlack {
+    background-color: hsl(0deg 0% 20%);
+    border: 3px solid hsl(0deg 0% 20%);
+}
+
+
+.usercardWhitespace {
+    border: 3px solid gray;
+    border-top:none;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.userContent {
+    margin: 0 30px;
+    flex-direction: column;
+}
+
+.blackBox {
+    padding-top: 3%;
+}
+
+#profilePic {
+    width: 100px;
+}
+
+.smallerPic {
+    width: 50px;
+}
+
+.request {
+    padding-top: 3%;
+}
+
+.requestName {
+    min-width: 30%;
+}
+
+#iconMap {
+    width: 10px;
+}
+
+#iconGear {
+    width: 15px;
+}
+
+a {
+    color: #085394;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 30px;
+}
+
+.education {
+    min-height: 150px;
+    min-width: 100%;
+    margin-top: 5%;
+}
+
+h3 {
+    margin: 10px 30px;
+    color: white;
+}
+
+#schoolDate {
+    color: gray;
+}
+
+.connectionRequests {
+    min-height: 200px;
+    min-width: 100%;
+}
+
+.request {
+    column-gap: 10px;
+}
+
+.circledNumber {
+    border-radius: 50%;
+    padding: 2px 8px;
+    border: 1px solid gray;
+    background-color: gray;
+    color: black;
+}
+
+#connectWhite {
+    min-height: 150px;
+}
+
+#yourWhite {
+    min-height: 330px;
+}
+
+.connections {
+    padding: 3%;
+}
+
+.yourConnections {
+    min-height: 400px;
+    min-width: 100%;
+    margin-top: 10%;
+}
+
+.connectionsContainer {
+    border-bottom: 3px solid gray;
+}
+
+#viewMore {
+    width: 100%;
+    min-height: 66px;
+    line-height: 66px;
+    text-align: center;
+}

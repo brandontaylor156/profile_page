@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navBar flex2">
+        <ul id="navOptions" class="flex4">
+            <li>Profile</li>
+            <li>Home</li>
+            <li>My Profile</li>
+            <li>Find Connections</li>
+        </ul>
+        <button id="signOut">Sign Out</button>
+    </header>
+
+    <div class="container flex1">
+        <div class="leftColumn flex1">
+
+            <div class="userCard relative">
+                <div class="topbarBlue"></div>
+                <div class="usercardWhitespace">
+                    <div class="userContent absolute flex3">
+                        <img src="./icons/user-circle.png" alt="user-circle" id="profilePic">
+                        <span>Brandon Taylor</span>
+                        <div class="location flex3">
+                            <img src="./icons/map-marker.png" alt="map-marker" id="iconMap">
+                            <p>Palmdale, CA</p>
+                        </div>
+                        <div class="userDescription">
+                            <p>Developer | Engineer | Problem Solver</p>
+                            <p>Master of shadows and the Internet!</p>
+                        </div>
+                        <div class="userSettings flex3">
+                            <img src="./icons/gear.png" alt="gear" id="iconGear">
+                            <a href="">edit profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="education">
+                <div class="topbarBlack flex2">
+                    <h3>Education</h3>
+                </div>
+                <div class="usercardWhitespace">
+                    <div class="userContent flex3 blackBox">
+                        <h4>Coding Dojo - Full Stack Bootcamp</h4>
+                        <h5 id="schoolDate">June 2022 - August 2022</h5>
+                        <h5 id="schoolInfo">Triple black belt in HTML, CSS, JavaScript, Python, and Java. Skilled in the art of Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem vel aperiam obcaecati odio labore officiis!</h5>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="rightColumn flex1">
+
+            <div class="connectionRequests">
+                <div class="topbarBlack flex2">
+                    <h3><span class="circledNumber">2</span>  Connection Requests</h3>
+                </div>
+                <div class="usercardWhitespace" id="connectWhite">
+                    <div class="request flex5">
+                        <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
+                        <span class="requestName">Todd E</span>
+                        <img src="./icons/accept-circle.png" alt="accept-circle" class="smallerPic">
+                        <img src="./icons/close-circle.png" alt="close-circle" class="smallerPic">
+                    </div>
+                    <div class="request flex5">
+                        <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
+                        <span class="requestName">Phil K</span>
+                        <img src="./icons/accept-circle.png" alt="accept-circle" class="smallerPic">
+                        <img src="./icons/close-circle.png" alt="close-circle" class="smallerPic">
+                    </div>
+                </div>
+            </div>
+
+            <div class="yourConnections">
+                <div class="topbarBlack flex2">
+                    <h3><span class='circledNumber'>500+</span>  Your Connections</h3>
+                </div>
+                <div class="usercardWhitespace" id="yourWhite">
+                    <div class="connectionsContainer">
+                        <div class="connections flex6">
+                            <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
+                            <span>Adrien D</span>
+                        </div>
+                        <div class="connections flex6">
+                            <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
+                            <span>Anne J</span>
+                        </div>
+                        <div class="connections flex6">
+                            <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
+                            <span>Alayne T</span>
+                        </div>
+                        <div class="connections flex6">
+                            <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
+                            <span>Arry Y</span>
+                        </div>
+                    </div>
+                    <div id="viewMore">
+                        <a href="">View More</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
