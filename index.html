@@ -43,7 +43,7 @@
                 <!-- WHITE SECTION OF BOX -->
                 <div class="usercardWhitespace">
                     <div class="userContent">
-                        <h2>Brandon Taylor</h2>
+                        <h2 id="mainUsername">Brandon Taylor</h2>
                         <div class="location flex3">
                             <img src="./icons/map-marker.png" alt="map-marker" id="iconMap">
                             <p>Palmdale, CA</p>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="userSettings flex3">
                             <img src="./icons/gear.png" alt="gear" id="iconGear">
-                            <a href="">edit profile</a>
+                            <button id="editProfile" onmouseover="changeCursor(this)" onclick="changeName()">edit profile</button>
                         </div>
                     </div>
                 </div>
@@ -85,20 +85,24 @@
             <!-- CONNECTION REQUESTS BOX -->
             <div class="connectionRequests">
                 <div class="topbarBlack flex2">
-                    <h3><span class="circledNumber">2</span>  Connection Requests</h3>
+                    <h3><span class="circledNumber" id="numRequests">2</span>  Connection Requests</h3>
                 </div>
                 <div class="usercardWhitespace" id="connectWhite">
-                    <div class="request flex5">
+                    <div class="request flex5" id="request1">
                         <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
                         <span class="requestName">Todd E</span>
-                        <img src="./icons/accept-circle.png" alt="accept-circle" class="smallerPic">
-                        <img src="./icons/close-circle.png" alt="close-circle" class="smallerPic">
+                        <img src="./icons/accept-circle.png" alt="accept-circle" id="accept1" class="smallerPic request_1"
+                            onmouseover="changeCursor(this)" onclick="deleteRequest(this)">
+                        <img src="./icons/close-circle.png" alt="close-circle" id="close1" class="smallerPic request_1"
+                            onmouseover="changeCursor(this)" onclick="deleteRequest(this)">
                     </div>
-                    <div class="request flex5">
+                    <div class="request flex5" id="request2">
                         <img src="./icons/user-circle.png" alt="user-circle" class="smallerPic">
                         <span class="requestName">Phil K</span>
-                        <img src="./icons/accept-circle.png" alt="accept-circle" class="smallerPic">
-                        <img src="./icons/close-circle.png" alt="close-circle" class="smallerPic">
+                        <img src="./icons/accept-circle.png" alt="accept-circle" id="accept2" class="smallerPic request_2"
+                            onmouseover="changeCursor(this)" onclick="deleteRequest(this)">
+                        <img src="./icons/close-circle.png" alt="close-circle" id="close2" class="smallerPic request_2"
+                            onmouseover="changeCursor(this)" onclick="deleteRequest(this)">
                     </div>
                 </div>
             </div>
@@ -106,7 +110,7 @@
             <!-- YOUR CONNECTIONS BOX -->
             <div class="yourConnections">
                 <div class="topbarBlack flex2">
-                    <h3><span class='circledNumber'>500+</span>  Your Connections</h3>
+                    <h3><span class='circledNumber' id="numConnections">418</span>  Your Connections</h3>
                 </div>
                 <div class="usercardWhitespace" id="yourWhite">
                     <div class="connectionsContainer">
@@ -135,5 +139,6 @@
         
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

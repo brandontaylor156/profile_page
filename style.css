@@ -65,11 +65,19 @@ li:first-child {
     font-size: x-large;
 }
 
-button{
+#signOut{
     background-color: #16a2b8;
     font-family: roboto_regular;
     color: white;
     padding: 5px 10px;
+}
+
+#editProfile {
+    color: #085394;
+    background-color: white;
+    border: none;
+    font-size: 1em;
+    text-decoration: underline;
 }
 
 .boxesContainer {
@@ -110,8 +118,6 @@ button{
 .usercardWhitespace {
     border: 3px solid gray;
     border-top:none;
-    min-height: 200px;
-    overflow: hidden;
 }
 
 .userContent {
@@ -201,7 +207,8 @@ h3 {
 }
 
 #connectWhite {
-    min-height: 150px;
+    padding: 10px;
+    overflow: hidden;
 }
 
 #yourWhite {
